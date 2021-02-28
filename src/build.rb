@@ -46,10 +46,23 @@ def watch_mode
   end
 end
 
+def gh_page
+  `git worktree add -B gh-pages -f build`
+  Dir.chdir('build') do
+    `git update-ref -d HEAD; git rm . -rf` # Complete branch reset
+  end
+  make_html('build')
+  make_css('build')
+  Dir.chdir('build') do
+    `git add .; git commit -m "update"`
+  end
+  `git worktree remove build -f`
+end
+
 if ARGV.include?('-w')
   watch_mode
 elsif ARGV.include?('-gh')
-  # `git `
+  gh_page
 else
   make_safe
 end
