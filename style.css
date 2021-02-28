@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=RocknRoll+One&display=swap");
+h1,
+h2,
+h3 {
+  font-family: "RocknRoll One", sans-serif; }
+
+* {
+  font-family: "Roboto", sans-serif;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #9d60ee, #568acf, #3d9fb8); }
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #474747; }
+  a:hover {
+    text-decoration: underline; }
+
+.main {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center; }
+  .main .main_container {
+    height: max-content;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .main h1 {
+    font-size: 3em;
+    margin: 20px 0;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 3px #000131dd; }
+  .main .info {
+    text-align: center;
+    text-shadow: 0 0 3px #000131dd;
+    color: white; }
+    .main .info > p {
+      margin: 5px; }
+  .main .deck {
+    padding: 20px 18px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px; }
+    .main .deck .card {
+      flex: 1 1 0px;
+      background: #f8f8f8;
+      border-radius: 10px;
+      margin: 15px 15px;
+      height: 240px;
+      min-height: fit-content;
+      min-width: 320px;
+      padding: 18px 10px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 2px 4px 4px 4px #063f8a15; }
+      .main .deck .card > * {
+        margin: 0;
+        margin-bottom: 10px; }
+      .main .deck .card .name {
+        font-size: 1.4em; }
+      .main .deck .card .description {
+        padding: 0 8px 0 10px; }
+      .main .deck .card .tags {
+        display: flex; }
+        .main .deck .card .tags .tag {
+          background: #afbdfd;
+          padding: 3px;
+          margin-right: 5px;
+          border-radius: 6px;
+          font-weight: 600; }
+      .main .deck .card .links {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-grow: 1;
+        align-items: flex-end; }
+        .main .deck .card .links a {
+          padding-right: 10px; }
+
+.retrospective {
+  padding: 20px 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .retrospective .retrospective-container {
+    padding: 20px 60px;
+    max-width: 1000px;
+    border-radius: 8px 8px 0 0;
+    background: white; }
+    .retrospective .retrospective-container h1 {
+      text-align: center;
+      font-size: 2em; }
+    .retrospective .retrospective-container blockquote {
+      background: #e1e8fd;
+      margin: 15px 20px;
+      padding: 20px;
+      border-radius: 10px; }

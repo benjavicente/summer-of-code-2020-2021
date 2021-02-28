@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+<meta charset='UTF-8'>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+<title>SOC-20-21</title>
+<link href='style.css' rel='stylesheet'>
+<meta content='SOC-20-21 | BV' property='og:title'>
+<meta content='website' property='og:type'>
+<meta content='https://benjavicente.github.io' property='og:url'>
+<meta content='Micro-proyectos realizados en el verano de 2020-2021, para aprender nuevas tecnologias y profundizar las conocidas.' property='og:description'>
+</head>
+<body>
+<section class='main'>
+<div class='main_container'>
+<h1>Summer of Code 2020-2021</h1>
+<div class='info'>
+<p>
+Micro-proyectos realizados en el verano de 2020-2021, para aprender
+nuevas tecnologías y profundizar las conocidas.
+</p>
+<p>
+El software creado fue elaborado como prototipo (muy simple, sin tests)
+con la posibilidad de retomarlo en un futuro.
+</p>
+</div>
+<div class='deck'>
+<div class='card'>
+<h3 class='name'>UCalendar</h3>
+<div class='tags'>
+<div class='tag'>Ruby</div>
+<div class='tag'>RoR</div>
+<div class='tag'>AJAX</div>
+</div>
+<div class='description'>
+Aplicación para obtener el horario de cursos de BuscaCursosUC y guardarlos en una aplicación de calendario.
+</div>
+<div class='links'>
+<a href='https://github.com/benjavicente/ucalendar/'>Repositorio</a>
+<a href='https://ucalendar.herokuapp.com/'>Heroku</a>
+<a href='https://benjavicente.github.io/ucalendar/'>Página</a>
+</div>
+</div>
+<div class='card'>
+<h3 class='name'>Intro to Julia</h3>
+<div class='tags'>
+<div class='tag'>Julia</div>
+<div class='tag'>Pluto</div>
+<div class='tag'>Math</div>
+</div>
+<div class='description'>
+Simulación de n-planetas en n-dimensiones, un ray-tracer simple y seam carving de imágenes a partir de
+contenidos de los cursos MIT 18.S191 y UC IMT1001.
+</div>
+<div class='links'>
+<a href='https://github.com/benjavicente/julia-scripts'>Repositorio</a>
+<a href='https://github.com/mitmath/18S191'>MIT 18.S191</a>
+</div>
+</div>
+<div class='card'>
+<h3 class='name'>COVID9 Maps</h3>
+<div class='tags'>
+<div class='tag'>Javascript</div>
+<div class='tag'>Vega-Lite</div>
+<div class='tag'>Data Vis.</div>
+</div>
+<div class='description'>
+Mápas del estado del COVID19 en Chile, con un interfaz simple para selecionar regiones, el color y la escala;
+con manejo de datos públicos del Ministerio de Ciencias.
+</div>
+<div class='links'>
+<a href='https://github.com/benjavicente/covid-maps'>Repositorio</a>
+<a href='https://benjavicente.github.io/covid-maps/'>Página</a>
+</div>
+</div>
+<div class='card'>
+<h3 class='name'>GMail filter parser</h3>
+<div class='tags'>
+<div class='tag'>Javascript</div>
+<div class='tag'>Parser</div>
+</div>
+<div class='description'>
+Parser básico de los filtros de GMail, que permite mostrar de una manera más sensilla que hace el filtro.
+</div>
+<div class='links'>
+<a href='https://github.com/benjavicente/gmail-filter-parser'>Repositorio</a>
+<a href='https://benjavicente.github.io/gmail-filter-parser/'>Página</a>
+</div>
+</div>
+<div class='card'>
+<h3 class='name'>MkRepo</h3>
+<div class='tags'>
+<div class='tag'>Python</div>
+<div class='tag'>CLI</div>
+<div class='tag'>Automatización</div>
+</div>
+<div class='description'>
+Interfaz de línea de comandos para hacer repositorios rápidamente, iniciando git, creando archivos y
+ejecutando comandos definidos en la plantilla selecionada.
+</div>
+<div class='links'>
+<a href='https://github.com/benjavicente/mkrepo'>Repositorio</a>
+</div>
+</div>
+<div class='card'>
+<h3 class='name'>SoC 2020-2021 Page</h3>
+<div class='tags'>
+<div class='tag'>SCSS</div>
+<div class='tag'>HAML</div>
+</div>
+<div class='description'>
+Esta página. Creada con Ruby utilizando HAML, SASS y un script propio para hacer el deploy
+y desarrollar la página en watch-mode.
+</div>
+<div class='links'>
+<a href='https://github.com/benjavicente/summer-of-code-2020-2021'>Repositorio</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class='retrospective'>
+<div class='retrospective-container'>
+<h1 id="retrospectiva">Retrospectiva</h1>
+
+<blockquote>
+  <p>[…] is a meeting held by a project team at the end of a project or
+process (often after a certain number of iterations) to discuss
+<strong>what was successful</strong> about the project or time period covered by
+that retrospective, <strong>what could be improved</strong>, and <strong>how to
+incorporate the successes and improvements in future iterations or
+projects</strong>.</p>
+</blockquote>
+
+<h2 id="lo-que-aprend">Lo que aprendí</h2>
+
+<ul>
+  <li>Como funciona las views de Ruby on Rails, y como se pueden utilizar
+para otros usos, como AJAX y render de página estática.</li>
+  <li>Como manejar archivos de <a href="https://icalendar.org/">ICalendar</a>, leyendo el estándar.</li>
+  <li>Programación con paradigma de <em><a href="https://en.wikipedia.org/wiki/Multiple_dispatch">multiple-dispatch</a></em> en
+<a href="https://en.wikipedia.org/wiki/Multiple_dispatch#Primary_paradigm">Julia</a>.</li>
+  <li>Desarrollo de paquetes básicos en Julia.</li>
+  <li>Como unir archivos de datos de diferentes tipos (de mapas y tablas).</li>
+  <li>Estructurar un lenguaje, y como construir un parser básico.</li>
+  <li>Administrar <em>vitual-enviroments</em> en python.</li>
+  <li>Como prototipar páginas y programas rápidamente utilizando ruby.</li>
+</ul>
+
+<h2 id="que-puedo-mejorar">Que puedo mejorar</h2>
+
+<ul>
+  <li>Aprender y hacer test. Fue difícil encontrar fallas porque no sabia
+como detectarlas en los diferentes lenguajes y funciones que
+desarrollaba. Debería incluir al menos un <em>smoke test</em> por cada
+funcionalidad.</li>
+  <li>Luego de hacer un prototipo, para ver si cierta idea funciona, debo
+estructurar lo que haré y ordenar lo hecho con la creación de
+diagramas de capas/dependencias y de interacciones entre las clases
+y funciones.</li>
+  <li>Ordenar y revisar la prioridad de las tareas a hacer. En unos
+momentos termine muy enfocado en detalles que no me ayudaron mucho.
+Usar más tableros (trello, kanban).</li>
+</ul>
+
+</div>
+</section>
+</body>
+</html>
