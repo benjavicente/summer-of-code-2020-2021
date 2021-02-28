@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+%html(lang="es")
+  %head
+    %meta(charset="UTF-8")/
+    %meta(http-equiv="X-UA-Compatible" content="IE=edge")/
+    %meta(name="viewport" content="width=device-width, initial-scale=1.0")/
+    %title SOC-20-21
+    %link(rel="stylesheet" href="style.css")/
+    %meta(property="og:title" content="SOC-20-21 | BV")
+    %meta(property="og:type" content="website")
+    %meta(property="og:url" content="https://benjavicente.github.io")
+    %meta(property="og:description" content="Micro-proyectos realizados en el verano de 2020-2021, para aprender nuevas tecnologias y profundizar las conocidas.")
+  %body
+    %section.main
+      .main_container
+        %h1 Summer of Code 2020-2021
+        .info
+          %p
+            Micro-proyectos realizados en el verano de 2020-2021, para aprender
+            nuevas tecnologias y profundizar las conocidas.
+          %p
+            El software creado fue elaborado como prototipo (muy simple, sin tests)
+            con la posibilidad de retomarlo en un futuro.
+        .deck
+          .card
+            %h3.name UCalendar
+            .tags
+              .tag Ruby
+              .tag RoR
+              .tag AJAX
+            .description
+              Applicación para obtener el horario de cursos de BuscaCursosUC y guardarlos en una aplicación de calendario.
+            .links
+              %a(href="https://github.com/benjavicente/ucalendar/") Repositorio
+              %a(href="https://ucalendar.herokuapp.com/") Heroku
+              %a(href="https://benjavicente.github.io/ucalendar/") Página
+          .card
+            %h3.name Intro to Julia
+            .tags
+              .tag Julia
+              .tag Pluto
+              .tag Math
+            .description
+              Simulación de n-planetas en n-dimensiones, un ray-tracer simple y seam carving de imagenes a partir de
+              contenidos de los cursos MIT 18.S191 y UC IMT1001.
+            .links
+              %a(href="https://github.com/benjavicente/julia-scripts") Repositorio
+              %a(href="https://github.com/mitmath/18S191") MIT 18.S191
+          .card
+            %h3.name COVID9 Maps
+            .tags
+              .tag Javascript
+              .tag Vega-Lite
+              .tag Data Vis.
+            .description
+              Mápas del estado del COVID19 en Chile, con un interfaz simple para selecionar regiones, el color y la escala;
+              con manejo de datos públicos del Ministerio de Ciencias.
+            .links
+              %a(href="https://github.com/benjavicente/covid-maps") Repositorio
+              %a(href="https://benjavicente.github.io/covid-maps/") Página
+          .card
+            %h3.name GMail filter parser
+            .tags
+              .tag Javascript
+              .tag Parser
+            .description
+              Parser básico de los filtros de GMail, que permite mostrar de una manera más sensilla que hace el filtro.
+            .links
+              %a(href="https://github.com/benjavicente/gmail-filter-parser") Repositorio
+              %a(href="https://benjavicente.github.io/gmail-filter-parser/") Página
+          .card
+            %h3.name MkRepo
+            .tags
+              .tag Python
+              .tag CLI
+              .tag Automatización
+            .description
+              Interfaz de línea de comandos para hacer repositorios rápidamente, iniciando git, creando archivos y
+              ejecutando comandos definidos en la plantilla selecionada.
+            .links
+              %a(href="https://github.com/benjavicente/mkrepo") Repositorio
+          .card
+            %h3.name SoC 2020-2021 Page
+            .tags
+              .tag SCSS
+              .tag HAML
+            .description
+              Esta página. Creada con Ruby utilizando HAML, SASS y un script propio para hacer el deploy
+              y desarrollar la página en watch-mode.
+            .links
+              %a(href="https://github.com/benjavicente/summer-of-code-2020-2021") Repositorio
+    %section.retrospective
+      .retrospective-container
+        = Tilt['md'].new('docs/retrospective.md').render
